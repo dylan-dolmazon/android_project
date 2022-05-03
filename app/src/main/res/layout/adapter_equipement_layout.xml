@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/mainColor"
+    >
+
+    <ImageView
+        android:id="@+id/Image"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Name"/>
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Name"
+        android:textColor="#F6F4FB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Nature_Sol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Nature du sol"
+        android:textColor="#F6F4FB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Image" />
+
+    <TextView
+        android:id="@+id/Departement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="TextView"
+        android:textColor="#F6F4FB"
+        app:layout_constraintStart_toEndOf="@+id/Image"
+        app:layout_constraintTop_toTopOf="@+id/Image" />
+
+    <TextView
+        android:id="@+id/Commune"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="#F6F4FB"
+        app:layout_constraintTop_toBottomOf="@+id/Departement"
+        app:layout_constraintBottom_toTopOf="@+id/NbPlaceTribune"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Image" />
+
+    <TextView
+        android:id="@+id/NbPlaceTribune"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="TextView"
+        android:textColor="#F6F4FB"
+        app:layout_constraintBottom_toBottomOf="@+id/Image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Image" />
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:id="@+id/separator"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@+id/Nature_Sol"
+        android:background="@color/secondaryColor"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
